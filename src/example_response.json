@@ -1,0 +1,106 @@
+{
+    "chart": {
+        "legends": [
+            "Kroger price",
+            "Kroger promo",
+            "Walmart price",
+            "Walmart promo",
+            "Albertsons price",
+            "Albertsons promo"
+        ],
+        "colors": [
+            "#000000",
+            "#666666",
+            "#306FD5",
+            "#83a9e6",
+            "#C53536",
+            "#dc8686"
+        ],
+        "xAxis": [
+            "2024-03-07",
+            "2024-03-14",
+            "2024-03-21",
+            "2024-03-28",
+            "2024-04-04",
+            "2024-04-11",
+            "2024-04-18",
+            "2024-04-25",
+            "2024-05-02",
+            "2024-05-09"
+        ],
+        "series": [
+            [
+                1.79,
+                1.79,
+                1.79,
+                1.79,
+                1.79,
+                1.79,
+                1.79,
+                1.89,
+                1.89,
+                1.79
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                1.79,
+                1.79,
+                1.79,
+                1.79,
+                1.79,
+                1.79,
+                1.79,
+                1.79,
+                1.79,
+                1.79
+            ],
+            [
+                null,
+                1.5,
+                null,
+                null,
+                null,
+                null,
+                1.5,
+                1.5,
+                null,
+                null
+            ]
+        ]
+    }
+}
