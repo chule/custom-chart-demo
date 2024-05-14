@@ -26,7 +26,7 @@ const CustomChart = ({ data }) => {
           parseTime(data.chart.xAxis[data.chart.xAxis.length - 1]),
         ])
         .range([50, dms.boundedWidth - 50]),
-    [dms.boundedWidth]
+    [dms.boundedWidth, parseTime, data.chart.xAxis]
   );
 
   const values = data.chart.series.flat(1);
@@ -39,7 +39,7 @@ const CustomChart = ({ data }) => {
         .scaleLinear()
         .domain(extent)
         .range([dms.boundedHeight - 50, 20]),
-    [dms.boundedHeight]
+    [dms.boundedHeight, extent]
   );
 
   const customData = data.chart.legends.map((d, i) => {

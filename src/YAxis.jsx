@@ -11,7 +11,7 @@ const XAxis = ({ domain, range }) => {
           value,
           yOffset: yScale(value),
         }));
-      }, [domain.join("-"), range.join("-")]);
+      }, [domain.join("-"), range.join("-"), domain, range]);
 
 
 

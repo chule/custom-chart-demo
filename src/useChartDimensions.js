@@ -39,13 +39,13 @@ const useChartDimensions = (passedSettings) => {
       if (!Array.isArray(entries)) return;
       if (!entries.length) return;
       const entry = entries[0];
-      if (width != entry.contentRect.width) setWidth(entry.contentRect.width);
-      if (height != entry.contentRect.height)
+      if (width !== entry.contentRect.width) setWidth(entry.contentRect.width);
+      if (height !== entry.contentRect.height)
         setHeight(entry.contentRect.height);
     });
     resizeObserver.observe(element);
     return () => resizeObserver.unobserve(element);
-  }, []);
+  }, [dimensions, height, width]);
   const newSettings = combineChartDimensions({
     ...dimensions,
     width: dimensions.width || width,
