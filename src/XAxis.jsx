@@ -11,7 +11,7 @@ const XAxis = ({ domain, range }) => {
       value,
       xOffset: xScale(value),
     }));
-  }, [domain.join("-"), range.join("-"), domain, range]);
+  }, [domain, range]);
 
   const timeFormat = d3.timeFormat("%b %d");
 

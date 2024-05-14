@@ -2,20 +2,16 @@ import { useMemo } from "react";
 import * as d3 from "d3";
 
 const XAxis = ({ domain, range }) => {
-    const ticks = useMemo(() => {
-        const yScale = d3.scaleLinear().domain(domain).range(range);
-        // const height = range[1] - range[0];
-        // const pixelsPerTick = 30;
-        // const numberOfTicksTarget = Math.max(1, Math.floor(height / pixelsPerTick));
-        return yScale.ticks().map((value) => ({
-          value,
-          yOffset: yScale(value),
-        }));
-      }, [domain.join("-"), range.join("-"), domain, range]);
-
-
-
-
+  const ticks = useMemo(() => {
+    const yScale = d3.scaleLinear().domain(domain).range(range);
+    // const height = range[1] - range[0];
+    // const pixelsPerTick = 30;
+    // const numberOfTicksTarget = Math.max(1, Math.floor(height / pixelsPerTick));
+    return yScale.ticks().map((value) => ({
+      value,
+      yOffset: yScale(value),
+    }));
+  }, [domain, range]);
 
   return (
     <g>
